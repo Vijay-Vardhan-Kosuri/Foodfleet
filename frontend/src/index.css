@@ -1,0 +1,35 @@
+@import "leaflet/dist/leaflet.css";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    font-family: "Plus Jakarta Sans", system-ui, sans-serif;
+  }
+
+  body {
+    background-color: #F7F3EA;
+    color: #171717;
+  }
+
+  h1, h2, h3, .font-display {
+    font-family: "Syne", "Plus Jakarta Sans", system-ui, sans-serif;
+  }
+}
+
+.reveal-fade {
+  animation: fadeUp 0.65s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
